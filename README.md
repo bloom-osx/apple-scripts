@@ -105,5 +105,11 @@ tell application "Bloom"
 	
 	-- Create a new tab and open a specific folder
 	make new tab with url "/Users/xxx/Library"
+
+	-- Create a new window with workspaces
+	make new window with workspace "Default Workspace"
+
+	-- Create a new tab with workspaces
+	make new window with workspace "Default Workspace"
 end tell
 ```

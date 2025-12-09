@@ -113,3 +113,19 @@ tell application "Bloom"
 	make new window with workspace "Default Workspace"
 end tell
 ```
+
+#### Select files
+
+```applescript
+tell application "Bloom"
+	-- Select files in the frontmost window
+	tell front window to select files {"/path_to_the_file"}
+
+	-- Select files in tabs
+	tell tab 2 of front window to select files {"/path_to_the_file"}
+
+	-- Select files in panes(not supported yet)
+	tell pane 2 of tab 2 of front window to select files {"/path_to_the_file_1", "/path_to_the_file_2"}
+end tell
+```
+
